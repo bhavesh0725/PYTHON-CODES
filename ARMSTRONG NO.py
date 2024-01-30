@@ -1,10 +1,11 @@
 def armstrongNo(n):
   sum=0
   temp=n
+  order = len(str(n))
 
   while temp>0:
     digit= temp %10
-    cube= digit ** 3
+    cube= digit ** order
     sum +=cube
     temp = temp// 10
 
